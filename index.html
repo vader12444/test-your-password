@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Your Password Strength</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Test Your Password Strength</h1>
+    <p class="description">
+      Your password is your first line of defense in protecting your online identity. Make it strong and secure!
+    </p>
+    <div class="password-input">
+      <label for="passwordInput">Enter your password:</label><br>
+      <input type="password" id="passwordInput" name="passwordInput" placeholder="emter Your Password">
+      <button onclick="submitPassword()">Submit</button>
+    </div>
+    <div class="result" id="resultSection">
+      <p id="passwordResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
