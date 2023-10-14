@@ -3,30 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Your Password Strength</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Instagram-like Interface</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="heading">Test Your Password Strength</h1>
-    <p class="description">
-      Your password is your first line of defense in protecting your online identity. Make it strong and secure!
-    </p>
-    <div class="password-input">
-      <label for="passwordInput">Enter your password:</label><br>
-      <input type="password" id="passwordInput" name="passwordInput" placeholder="emter Your Password">
-      <button onclick="submitPassword()">Submit</button>
-    </div>
-    <div class="result" id="resultSection">
-      <p id="passwordResult"></p>
-    </div>
+  <div class="instagram-container">
+    <header class="instagram-header">
+      <div class="logo">
+        <img src="instagram_logo.png" alt="Instagram Logo">
+      </div>
+      <input type="text" placeholder="Search">
+      <div class="icons">
+        <i class="fa fa-home"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-user"></i>
+      </div>
+    </header>
+    <main class="instagram-main">
+      <!-- Posts and feed content -->
+      <!-- Sample post -->
+      <div class="post">
+        <img src="image.jpg" alt="Sample Post">
+        <div class="post-caption">This is a sample post.</div>
+        <button id="like-button" onclick="toggleLike()">Like</button>
+        <span id="like-count">0 likes</span>
+      </div>
+      <!-- Add more posts here -->
+    </main>
+    <footer class="instagram-footer">
+      <!-- Interaction icons -->
+      <i class="fa fa-heart"></i>
+      <i class="fa fa-comment"></i>
+      <i class="fa fa-paper-plane"></i>
+      <i class="fa fa-bookmark"></i>
+    </footer>
   </div>
 
-  <script <form onsubmit="submitFormData(); return false;">
-  <label for="passwordInput">Enter your password:</label><br>
-  <input type="password" id="passwordInput" placeholder="Your Password">
-  <button type="submit">Submit</button>
-</form>
-></script>
+  <script src="script.js"></script>
 </body>
 </html>
